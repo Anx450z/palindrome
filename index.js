@@ -1,4 +1,4 @@
-module.exports = Phase;
+module.exports = Phrase;
 //native object modification
 String.prototype.reverse = function() {
   return Array.from(this).reverse().join("");
@@ -7,8 +7,8 @@ String.prototype.reverse = function() {
 function Phrase(content){
   this.content = content;
 
-  this.processor = function processor(){
-    return string.toLowerCase(string);
+  this.processor = function processor(string){
+    return string.toLowerCase();
   }
 
   this.processedContent = function processedContent(){
@@ -18,9 +18,5 @@ function Phrase(content){
   // Returns true if the phrase is a palindrome, false otherwise
   this.palindrome = function palindrome() {
     return this.processedContent() === this.processedContent().reverse();
-  }
-
-  this.louder = function louder(){
-    return this.content.toUpperCase();
   }
 }
