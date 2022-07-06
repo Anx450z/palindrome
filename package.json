@@ -1,0 +1,23 @@
+{
+  "name": "anx450z-palindrome",
+  "version": "0.1.0",
+  "description": "Palindrome detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anx450z/palindrome.git"
+  },
+  "keywords": [
+    "palindrome",
+    "javascript"
+  ],
+  "author": "Ankur Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anx450z/palindrome/issues"
+  },
+  "homepage": "https://github.com/Anx450z/palindrome#readme"
+}
