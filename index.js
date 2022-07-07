@@ -17,13 +17,6 @@ function Phrase(content){
   }
 
   this.letters = function letters(){
-    let theLetters =[];
-    const letterRegex = /[a-z]/i;
-    Array.from(this.content).forEach(function(char) {
-      if (char.match(letterRegex)) {
-        theLetters.push(char);
-      }
-    });
-    return theLetters.join("");
+    return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
   }
 }
