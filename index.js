@@ -17,12 +17,13 @@ function Phrase(content){
   }
 
   this.letters = function letters(){
-    let theLetters = [];
-    for (let i =0; i < this.content.length; i++){
-      if (this.content.charAt(i).match(/[a-zA-z]/)){
-        theLetters.push(this.content.charAt(i));
+    let theLetters =[];
+    const letterRegex = /[a-z]/i;
+    Array.from(this.content).forEach(function(char) {
+      if (char.match(letterRegex)) {
+        theLetters.push(char);
       }
-    }
+    });
     return theLetters.join("");
   }
 }
